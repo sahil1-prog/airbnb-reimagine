@@ -117,11 +117,7 @@ cd airbnb-reimagine/airbnb-anywhere-door
 ```
 
 ### 2. Install Dependencies
-Using **pnpm** (recommended):
-```bash
-pnpm install
-```
-*Or using npm/yarn:*
+Using **npm**:
 ```bash
 npm install
 ```
@@ -134,11 +130,7 @@ PEXELS_API_KEY=your_pexels_api_key_here
 ```
 > 💡 *Note: You can obtain a free Gemini API key from [Google AI Studio](https://aistudio.google.com/), and a free Pexels key from the [Pexels Developer Portal](https://www.pexels.com/api/).*
 
-### 4. Run the Development Server
-```bash
-pnpm run dev
-```
-*Or using npm:*
+Using **npm**:
 ```bash
 npm run dev
 ```
@@ -148,8 +140,8 @@ Open **[http://localhost:3000](http://localhost:3000)** in your browser.
 
 ### 5. Build for Production
 ```bash
-pnpm run build
-...
+npm run build
+npm run start
 ```
 
 ---

@@ -37,10 +37,10 @@ Available commands in this module:
 
 | Command | Action |
 |:---|:---|
-| `pnpm run dev` | Runs the Next.js development server on `http://localhost:3000` |
-| `pnpm run build` | Compiles the project with full TypeScript checks |
-| `pnpm run start` | Launches the production-optimized server |
-| `pnpm run lint` | Runs ESLint syntax and rule checking |
+| `npm run dev` | Runs the Next.js development server on `http://localhost:3000` |
+| `npm run build` | Compiles the project with full TypeScript checks |
+| `npm run start` | Launches the production-optimized server |
+| `npm run lint` | Runs ESLint syntax and rule checking |
 
 ---
 
