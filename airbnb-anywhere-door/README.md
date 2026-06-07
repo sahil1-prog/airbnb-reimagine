@@ -1,4 +1,4 @@
-# Airbnb Odyssey — Next.js Application Module
+# Airbnb Odyssey - Next.js Application Module
 
 This directory contains the Next.js App Router web application that serves as the AI-powered travel planning module. Airbnb Odyssey is an interactive travel planner that lets users instantly generate custom itineraries, group budget splits, and curated property matches using natural language.
 

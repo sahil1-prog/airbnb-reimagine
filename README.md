@@ -5,7 +5,7 @@
 ---
 
 ## 📖 The Vision
-In the classic anime *Doraemon*, the **Anywhere Door** (*Dokodemo Door*) is a magical gadget that immediately transports you to any location you desire. There are no forms to fill, no search filter screens to configure, and no tedious routing procedures—you simply state your destination, turn the knob, and walk through.
+In the classic anime *Doraemon*, the **Anywhere Door** (*Dokodemo Door*) is a magical gadget that immediately transports you to any location you desire. There are no forms to fill, no search filter screens to configure, and no tedious routing procedures-you simply state your destination, turn the knob, and walk through.
 
 ### The Problem
 Traditional travel booking is plagued by **comparison paralysis** and **friction**. The average traveler spends **4.2 hours** across multiple sessions:
@@ -17,7 +17,7 @@ Traditional travel booking is plagued by **comparison paralysis** and **friction
 ### The Solution
 We reimagined Airbnb around the **Doraemon Principle**: *Remove all friction between user intent and the travel outcome.* 
 
-**Airbnb Odyssey** is a unified natural language interface embedded in the Airbnb application. By typing a single conversational prompt—such as *"A quiet, remote cabin in the mountains for 4 friends under $250/night, must have a hot tub and fast Wi-Fi for remote work"*—the Gemini-driven backend instantly compiles property recommendations, synthesizes guest feedback into a simple pros-and-cons summary, drafts a curated local itinerary, and calculates the exact per-person cost breakdown.
+**Airbnb Odyssey** is a unified natural language interface embedded in the Airbnb application. By typing a single conversational prompt-such as *"A quiet, remote cabin in the mountains for 4 friends under $250/night, must have a hot tub and fast Wi-Fi for remote work"*-the Gemini-driven backend instantly compiles property recommendations, synthesizes guest feedback into a simple pros-and-cons summary, drafts a curated local itinerary, and calculates the exact per-person cost breakdown.
 
 ---
 

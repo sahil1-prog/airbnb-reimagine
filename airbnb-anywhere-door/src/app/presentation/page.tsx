@@ -25,7 +25,7 @@ export default function DeckPage() {
         </div>
         <div className="deck-controls">
           <span className="deck-counter">9 Slides</span>
-          
+
           <button onClick={toggleTheme} className="deck-btn deck-theme-btn" title="Toggle Theme">
             {theme === "dark" ? <Sun size={15} /> : <Moon size={15} />}
           </button>
@@ -90,7 +90,7 @@ export default function DeckPage() {
               Travel planning is <span className="highlight">broken.</span>
             </h2>
             <p>
-              The average Airbnb user spends <strong style={{ color: "var(--text-primary)" }}>4.2 hours</strong> across multiple sessions comparing listings, reading hundreds of reviews, cross-referencing dates, and coordinating budgets — before making a single booking.
+              The average Airbnb user spends <strong style={{ color: "var(--text-primary)" }}>4.2 hours</strong> across multiple sessions comparing listings, reading hundreds of reviews, cross-referencing dates, and coordinating budgets - before making a single booking.
             </p>
             <div className="stat-row">
               <div className="stat-item">
@@ -124,7 +124,7 @@ export default function DeckPage() {
             <div className="slide-tag">03 / Why GenAI</div>
             <h2>The Doraemon Principle</h2>
             <p>
-              Doraemon&apos;s gadgets don&apos;t ask you to fill out forms — they understand your desire and deliver the outcome instantly. Generative AI enables the same magic: context-aware understanding that removes all friction between intent and outcome.
+              Doraemon&apos;s gadgets don&apos;t ask you to fill out forms - they understand your desire and deliver the outcome instantly. Generative AI enables the same magic: context-aware understanding that removes all friction between intent and outcome.
             </p>
             <div className="slide-grid">
               <div className="slide-card">
@@ -138,7 +138,7 @@ export default function DeckPage() {
                 <div className="slide-card-icon">⚡</div>
                 <div className="slide-card-title">Instant Synthesis</div>
                 <div className="slide-card-text">
-                  Simultaneously curate listings, generate itineraries, and calculate cost splits — in under 3 seconds.
+                  Simultaneously curate listings, generate itineraries, and calculate cost splits - in under 3 seconds.
                 </div>
               </div>
               <div className="slide-card">
@@ -163,7 +163,7 @@ export default function DeckPage() {
             <div className="slide-tag">04 / User Segments</div>
             <h2>Who benefits <span className="highlight">most?</span></h2>
             <p>
-              Three high-value segments with acute pain points that the Airbnb Odyssey directly resolves — driving both booking conversion and revenue per trip.
+              Three high-value segments with acute pain points that the Airbnb Odyssey directly resolves - driving both booking conversion and revenue per trip.
             </p>
             <div className="slide-grid">
               <div className="slide-card">

@@ -178,7 +178,7 @@ function getMockResponse(prompt: string, currencySymbol: string): PlanResult {
       ],
       itinerary: [
         {
-          day: "Day 1 — Arrival & Beach Sunset",
+          day: "Day 1 - Arrival & Beach Sunset",
           activities: [
             { time: "Afternoon", description: "Check in at your beach property and freshen up." },
             { time: "Evening", description: "Sunset walk on Candolim beach followed by beachside shacks dinner." },
@@ -186,7 +186,7 @@ function getMockResponse(prompt: string, currencySymbol: string): PlanResult {
           ],
         },
         {
-          day: "Day 2 — Heritage Tour & Spice Plantation",
+          day: "Day 2 - Heritage Tour & Spice Plantation",
           activities: [
             { time: "Morning", description: "Visit Basilica of Bom Jesus and Old Goa churches." },
             { time: "Afternoon", description: "Traditional buffet lunch at Sahakari Spice Farm." },
@@ -194,7 +194,7 @@ function getMockResponse(prompt: string, currencySymbol: string): PlanResult {
           ],
         },
         {
-          day: "Day 3 — Water Sports & Departure",
+          day: "Day 3 - Water Sports & Departure",
           activities: [
             { time: "Morning", description: "Parasailing and jet skiing at Baga Beach." },
             { time: "Afternoon", description: "Local fish curry thali lunch." },
@@ -275,7 +275,7 @@ function getMockResponse(prompt: string, currencySymbol: string): PlanResult {
       ],
       itinerary: [
         {
-          day: "Day 1 — Arrival & Solang Valley Views",
+          day: "Day 1 - Arrival & Solang Valley Views",
           activities: [
             { time: "Afternoon", description: "Arrive in Manali, check in to your chalet and enjoy hot chai." },
             { time: "Evening", description: "Stroll along Mall Road and buy local woollens." },
@@ -283,7 +283,7 @@ function getMockResponse(prompt: string, currencySymbol: string): PlanResult {
           ],
         },
         {
-          day: "Day 2 — Paragliding & Jogini Waterfall Trek",
+          day: "Day 2 - Paragliding & Jogini Waterfall Trek",
           activities: [
             { time: "Morning", description: "Paragliding in Solang Valley." },
             { time: "Afternoon", description: "Scenic trek to Jogini Waterfalls near Vashisht village." },
@@ -291,7 +291,7 @@ function getMockResponse(prompt: string, currencySymbol: string): PlanResult {
           ],
         },
         {
-          day: "Day 3 — Solang Valley Skiing & Departure",
+          day: "Day 3 - Solang Valley Skiing & Departure",
           activities: [
             { time: "Morning", description: "Skiing session or cable car ride." },
             { time: "Afternoon", description: "Café hopping in Old Manali." },
@@ -363,21 +363,21 @@ function getMockResponse(prompt: string, currencySymbol: string): PlanResult {
     ],
     itinerary: [
       {
-        day: "Day 1 — Arrival & Sunset View",
+        day: "Day 1 - Arrival & Sunset View",
         activities: [
           { time: "Afternoon", description: "Arrive at your property and check in." },
           { time: "Evening", description: "Scenic sunset stroll followed by dinner." },
         ],
       },
       {
-        day: "Day 2 — Sightseeing & Local Experiences",
+        day: "Day 2 - Sightseeing & Local Experiences",
         activities: [
           { time: "Morning", description: "Enjoy a guided tour of regional highlights." },
           { time: "Afternoon", description: "Taste authentic cuisines at a local bazaar." },
         ],
       },
       {
-        day: "Day 3 — Farewell & Departure",
+        day: "Day 3 - Farewell & Departure",
         activities: [
           { time: "Morning", description: "Last souvenir shopping and coffee." },
           { time: "Afternoon", description: "Depart for the airport." },
@@ -544,7 +544,7 @@ export default function AnywhereDoor({
       console.warn("API call failed or timed out. Falling back to mock generator:", err?.message || err);
       // Fall back to mock response *only after* a failure occurs
       const mock = getMockResponse(finalPrompt, currency);
-      
+
       setSteps(THINKING_STEPS.map((label) => ({ label, status: "done" })));
       await new Promise((r) => setTimeout(r, 400));
 
@@ -586,7 +586,7 @@ export default function AnywhereDoor({
     <>
       <div className={`drawer-overlay${isOpen ? " open" : ""}`} onClick={onClose} aria-hidden="true" />
       <div className={`drawer${isOpen ? " open" : ""}`} role="dialog" aria-modal="true" aria-label="Airbnb Odyssey AI Travel Planner">
-        
+
         {/* Header */}
         <div className="drawer-header">
           <div className="drawer-title">
@@ -598,7 +598,7 @@ export default function AnywhereDoor({
               <p>AI Travel Companion · {country} · {currency}</p>
             </div>
           </div>
-          
+
           <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
             <button
               onClick={() => setShowSettings(!showSettings)}
@@ -640,7 +640,7 @@ export default function AnywhereDoor({
                 style={{ width: 18, height: 18, accentColor: "var(--airbnb-coral)", cursor: "pointer" }}
               />
             </div>
-            
+
             {useTavily && (
               <div className="setting-input-wrapper">
                 <span className="setting-label">Tavily API Key</span>
@@ -650,8 +650,8 @@ export default function AnywhereDoor({
                   placeholder="Enter tvly-..."
                   value={tavilyApiKey}
                   onChange={(e) => {
-                     setTavilyApiKey(e.target.value);
-                     localStorage.setItem("tavily-api-key", e.target.value);
+                    setTavilyApiKey(e.target.value);
+                    localStorage.setItem("tavily-api-key", e.target.value);
                   }}
                 />
                 {!tavilyApiKey && (

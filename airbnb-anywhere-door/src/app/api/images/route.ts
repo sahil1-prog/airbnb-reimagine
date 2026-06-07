@@ -118,7 +118,7 @@ export async function GET(req: NextRequest) {
       `https://api.pexels.com/v1/search?query=${encodeURIComponent(searchQuery)}&per_page=5&orientation=landscape`,
       {
         headers: { Authorization: apiKey },
-        // Next.js fetch cache — deduplicate identical requests within a request cycle
+        // Next.js fetch cache - deduplicate identical requests within a request cycle
         next: { revalidate: 3600 },
       }
     );

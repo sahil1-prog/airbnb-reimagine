@@ -16,15 +16,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Airbnb Odyssey — AI-First Travel Reimagined",
+  title: "Airbnb Odyssey - AI-First Travel Reimagined",
   description:
-    "Experience the future of travel planning. Our AI companion eliminates all search friction — one prompt generates curated listings, itineraries, and cost splits instantly.",
+    "Experience the future of travel planning. Our AI companion eliminates all search friction - one prompt generates curated listings, itineraries, and cost splits instantly.",
   keywords: "Airbnb, Airbnb Odyssey, AI travel, GenAI, travel planner, itinerary, India",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Airbnb Odyssey — AI Travel Companion",
+    title: "Airbnb Odyssey - AI Travel Companion",
     description: "One prompt. Perfect trip. No filters needed.",
     type: "website",
   },
@@ -57,7 +57,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${outfit.variable} ${inter.variable}`} suppressHydrationWarning>
       <head>
-        {/* FOUC prevention — runs synchronously before paint */}
+        {/* FOUC prevention - runs synchronously before paint */}
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body suppressHydrationWarning>

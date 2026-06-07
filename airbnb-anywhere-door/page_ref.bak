@@ -993,12 +993,12 @@ export default function Home() {
         }
       }
     } catch (_) {
-      // Corrupt cache — continue to fetch
+      // Corrupt cache - continue to fetch
     }
 
     // --- Cache miss / expired / city changed → fetch API ---
     setListingsLoading(true);
-    console.log("Client listings cache MISS — fetching /api/listings for:", geoInfo.city);
+    console.log("Client listings cache MISS - fetching /api/listings for:", geoInfo.city);
 
     const localTavilyKey = typeof window !== 'undefined' ? localStorage.getItem("tavily-api-key") || "" : "";
     const localUseTavily = typeof window !== 'undefined' ? localStorage.getItem("use-tavily") === "true" : false;
@@ -1019,7 +1019,7 @@ export default function Home() {
         return res.json();
       })
       .then((data) => {
-        // Use dynamic data if valid — never mix with mock
+        // Use dynamic data if valid - never mix with mock
         const isSwiss = geoInfo.country === "Switzerland" || geoInfo.country === "CH";
         const fallbackStays = isSwiss ? STAYS_LISTINGS_SWITZERLAND : STAYS_LISTINGS_INDIA;
         const fallbackExperiences = isSwiss ? EXPERIENCES_LISTINGS_SWITZERLAND : EXPERIENCES_LISTINGS_INDIA;
@@ -1041,11 +1041,11 @@ export default function Home() {
           );
           console.log("Client listings cache WRITTEN for:", geoInfo.city);
         } catch (_) {
-          // Storage quota exceeded — no-op
+          // Storage quota exceeded - no-op
         }
       })
       .catch((err) => {
-        // Full mock fallback on any error — never a partial/mixed state
+        // Full mock fallback on any error - never a partial/mixed state
         console.error("Dynamic listings failed, falling back to full mock data:", err);
         const isSwiss = geoInfo.country === "Switzerland" || geoInfo.country === "CH";
         setStaysListings(isSwiss ? STAYS_LISTINGS_SWITZERLAND : STAYS_LISTINGS_INDIA);

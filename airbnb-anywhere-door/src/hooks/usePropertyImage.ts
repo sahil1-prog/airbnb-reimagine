@@ -41,7 +41,7 @@ function setSessionCache(key: string, entry: SessionEntry) {
   try {
     sessionStorage.setItem(SESSION_CACHE_PREFIX + key, JSON.stringify(entry));
   } catch {
-    // sessionStorage full or unavailable — silently ignore
+    // sessionStorage full or unavailable - silently ignore
   }
 }
 
@@ -56,7 +56,7 @@ export function usePropertyImage(query: string, enabled: boolean = true, type: "
   // Determine if we have a synchronous memory or session cache hit before rendering
   const getCachedEntry = (): { url: string; alt: string; photographer: string } | null => {
     if (!enabled || !query) return null;
-    
+
     // Check in-memory cache first (instant)
     const memoryHit = clientImageMemoryCache.get(cacheKey);
     if (memoryHit) return memoryHit;
@@ -72,7 +72,7 @@ export function usePropertyImage(query: string, enabled: boolean = true, type: "
       });
       return sessionHit;
     }
-    
+
     return null;
   };
 

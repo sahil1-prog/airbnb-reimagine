@@ -97,7 +97,7 @@ A unified, AI-first conversational travel assistant embedded directly into the A
 
 ## 4. Detailed Presentation Slide Outline
 
-### Slide 1: Vision — Introducing Airbnb Odyssey
+### Slide 1: Vision - Introducing Airbnb Odyssey
 * **Header:** Introducing Airbnb Odyssey
 * **Subtitle:** Reimagining the search-to-booking journey through localized GenAI integration, client-side IndexedDB persistence, and custom trust verification mechanics.
 * **Core Pillars:**
@@ -106,7 +106,7 @@ A unified, AI-first conversational travel assistant embedded directly into the A
   3. *Verified Guest Passport:* Frictionless trust verification.
   4. *Zero Friction:* Eliminating multi-step search forms.
 
-### Slide 2: The Problem — Travel Planning is Broken
+### Slide 2: The Problem - Travel Planning is Broken
 * **Header:** Travel planning is broken.
 * **Content:** The average traveler spends 4.2 hours across 23+ browser sessions comparing listings, reading fragmented reviews, and calculating split budgets.
 * **Key Metrics:**
@@ -115,7 +115,7 @@ A unified, AI-first conversational travel assistant embedded directly into the A
   * *$9.6 Billion:* Lost industry revenue from drop-offs.
   * *23+ Filters:* The sheer number of options overwhelming users.
 
-### Slide 3: Why GenAI — The Doraemon Principle
+### Slide 3: Why GenAI - The Doraemon Principle
 * **Header:** The Doraemon Principle
 * **Content:** Traditional search filters force users to do the work. GenAI understands intent and generates outcomes.
 * **Pillars:**
@@ -123,14 +123,14 @@ A unified, AI-first conversational travel assistant embedded directly into the A
   * *Instant Synthesis:* Simultaneously curates listings, itineraries, and cost splits in <3 seconds.
   * *Zero Friction:* Direct transition from user intent to perfect outcome. Traditional ML cannot do this.
 
-### Slide 4: User Segments — Target Audiences
+### Slide 4: User Segments - Target Audiences
 * **Header:** Who benefits most?
 * **Segments:**
   1. *Group Travelers:* Organizing 4–10 people. The AI creates a consensus-optimized plan instantly.
   2. *Business Nomads:* Professionals requiring workspaces and reliable Wi-Fi. AI pre-qualifies listings against strict criteria.
   3. *First-Time Internationals:* Unfamiliar with local languages or transport. AI acts as a 24/7 local expert.
 
-### Slide 5: The Experience — Embedded Floating Companion
+### Slide 5: The Experience - Embedded Floating Companion
 * **Header:** Doraemon's Anywhere Door
 * **UI Features:**
   * *Natural Language Input:* "Beach house in Goa for 6, July, $200/night."
@@ -138,21 +138,21 @@ A unified, AI-first conversational travel assistant embedded directly into the A
   * *Auto Itinerary:* Custom day-by-day plans.
   * *Cost Splitting:* Clear per-person breakdowns.
 
-### Slide 6: Engineering — Local-First & Privacy-Centric
+### Slide 6: Engineering - Local-First & Privacy-Centric
 * **Header:** Local-First & Privacy-Centric
 * **Technical Details:**
   * *IndexedDB Engine:* Relational-like transactional storage layer inside the browser for offline availability.
   * *Zero Session Losses:* Plans are preserved across hard-refreshes.
   * *Privacy Sandbox:* Sensitive trip details are kept locally in the client database until conversion, minimizing server footprint and training exposures.
 
-### Slide 7: Trust & UX — Verified Passport & Personalization
+### Slide 7: Trust & UX - Verified Passport & Personalization
 * **Header:** Verified Passport & Personalization
 * **Features:**
   * *Verified Passport UI:* Displays guest identity, history, and travel badges.
   * *Theme-Aware Aesthetics:* Smooth transitions between Light and Dark modes.
   * *Localized Defaults:* Tailored experiences for regions (e.g. Roorkee, India) with localized currencies and payment methods.
 
-### Slide 8: Business Value — Success Metrics
+### Slide 8: Business Value - Success Metrics
 * **Header:** Measuring Impact
 * **Target KPIs (90-day post-launch A/B test):**
   * *+22% Booking Conversion:* Odyssey users vs. standard search.

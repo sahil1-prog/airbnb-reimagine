@@ -46,7 +46,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
       ],
       itinerary: [
         {
-          day: "Day 1 — Arrival & Beach Sunset",
+          day: "Day 1 - Arrival & Beach Sunset",
           activities: [
             { time: "Afternoon", description: "Check in at your beach property and freshen up." },
             { time: "Evening", description: "Sunset walk on Candolim beach followed by beachside shacks dinner." },
@@ -54,7 +54,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 2 — Heritage Tour & Spice Plantation",
+          day: "Day 2 - Heritage Tour & Spice Plantation",
           activities: [
             { time: "Morning", description: "Visit Basilica of Bom Jesus and Old Goa churches." },
             { time: "Afternoon", description: "Traditional buffet lunch at Sahakari Spice Farm." },
@@ -62,7 +62,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 3 — Water Sports & Departure",
+          day: "Day 3 - Water Sports & Departure",
           activities: [
             { time: "Morning", description: "Parasailing and jet skiing at Baga Beach." },
             { time: "Afternoon", description: "Local fish curry thali lunch." },
@@ -112,7 +112,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
       ],
       itinerary: [
         {
-          day: "Day 1 — Arrival & Solang Valley Views",
+          day: "Day 1 - Arrival & Solang Valley Views",
           activities: [
             { time: "Afternoon", description: "Arrive in Manali, check in to your chalet and enjoy hot chai." },
             { time: "Evening", description: "Stroll along Mall Road and buy local woollens." },
@@ -120,7 +120,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 2 — Paragliding & Jogini Waterfall Trek",
+          day: "Day 2 - Paragliding & Jogini Waterfall Trek",
           activities: [
             { time: "Morning", description: "Paragliding in Solang Valley." },
             { time: "Afternoon", description: "Scenic trek to Jogini Waterfalls near Vashisht village." },
@@ -128,7 +128,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 3 — Solang Valley Skiing & Departure",
+          day: "Day 3 - Solang Valley Skiing & Departure",
           activities: [
             { time: "Morning", description: "Skiing session or cable car ride." },
             { time: "Afternoon", description: "Café hopping in Old Manali." },
@@ -178,7 +178,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
       ],
       itinerary: [
         {
-          day: "Day 1 — Trivandrum to Varkala Cliff",
+          day: "Day 1 - Trivandrum to Varkala Cliff",
           activities: [
             { time: "Afternoon", description: "Drive to Varkala and check in to your clifftop room." },
             { time: "Evening", description: "Explore the clifftop shops and watch sunset over the Arabian Sea." },
@@ -186,7 +186,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 2 — Alleppey Backwater Cruise",
+          day: "Day 2 - Alleppey Backwater Cruise",
           activities: [
             { time: "Morning", description: "Drive to Alleppey and board your luxury houseboat." },
             { time: "Afternoon", description: "Cruise through narrow canals with traditional lunch served on board." },
@@ -194,7 +194,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 3 — Sunrise Yoga & Departure",
+          day: "Day 3 - Sunrise Yoga & Departure",
           activities: [
             { time: "Morning", description: "Sunrise beach yoga session." },
             { time: "Afternoon", description: "Traditional Sadya lunch served on banana leaf." },
@@ -244,7 +244,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
       ],
       itinerary: [
         {
-          day: "Day 1 — Jaipur Palace & Amer Fort",
+          day: "Day 1 - Jaipur Palace & Amer Fort",
           activities: [
             { time: "Afternoon", description: "Arrive in Jaipur, check in to your Haveli." },
             { time: "Evening", description: "Visit Amer Fort and watch the light and sound show." },
@@ -252,7 +252,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 2 — Hawa Mahal & Bazaars",
+          day: "Day 2 - Hawa Mahal & Bazaars",
           activities: [
             { time: "Morning", description: "Photoshoot at Hawa Mahal and visit City Palace." },
             { time: "Afternoon", description: "Shopping in Johari Bazaar for handicrafts." },
@@ -260,7 +260,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 3 — Sunrise Balloon & Departure",
+          day: "Day 3 - Sunrise Balloon & Departure",
           activities: [
             { time: "Morning", description: "Sunrise hot air balloon ride over the fort." },
             { time: "Afternoon", description: "Lassi tasting at Lassiwala." },
@@ -310,7 +310,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
       ],
       itinerary: [
         {
-          day: "Day 1 — Arrival & Ocean Drive",
+          day: "Day 1 - Arrival & Ocean Drive",
           activities: [
             { time: "Afternoon", description: "Check in at your beach property and enjoy the pool." },
             { time: "Evening", description: "Sunset walk on South Beach and explore art deco buildings." },
@@ -318,7 +318,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 2 — Wynwood Walls & Sunset Cruise",
+          day: "Day 2 - Wynwood Walls & Sunset Cruise",
           activities: [
             { time: "Morning", description: "Tour the famous Wynwood Walls street art." },
             { time: "Afternoon", description: "Little Havana food tour tasting cuban sandwich." },
@@ -326,7 +326,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 3 — Everglades Airboat Tour",
+          day: "Day 3 - Everglades Airboat Tour",
           activities: [
             { time: "Morning", description: "Airboat tour in Everglades National Park to see gators." },
             { time: "Afternoon", description: "Lunch at Key Biscayne." },
@@ -376,7 +376,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
       ],
       itinerary: [
         {
-          day: "Day 1 — Arrival & Cozy Cabin Night",
+          day: "Day 1 - Arrival & Cozy Cabin Night",
           activities: [
             { time: "Afternoon", description: "Arrive in Aspen, check in to your timber chalet." },
             { time: "Evening", description: "Relax in the private hot tub under the stars." },
@@ -384,7 +384,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 2 — Skiing & Après Ski",
+          day: "Day 2 - Skiing & Après Ski",
           activities: [
             { time: "Morning", description: "Full morning skiing/snowboarding on Aspen mountain." },
             { time: "Afternoon", description: "Ski school session or freestyle riding." },
@@ -392,7 +392,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 3 — Maroon Bells Hike",
+          day: "Day 3 - Maroon Bells Hike",
           activities: [
             { time: "Morning", description: "Snowshoe or hike around the iconic Maroon Bells lake." },
             { time: "Afternoon", description: "Lunch at Ajax Tavern." },
@@ -442,7 +442,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
       ],
       itinerary: [
         {
-          day: "Day 1 — Brooklyn Bridge Sunset",
+          day: "Day 1 - Brooklyn Bridge Sunset",
           activities: [
             { time: "Afternoon", description: "Check in to your brownstone loft and unpack." },
             { time: "Evening", description: "Walk across Brooklyn Bridge at sunset for skyline views." },
@@ -450,7 +450,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 2 — Central Park & Broadway",
+          day: "Day 2 - Central Park & Broadway",
           activities: [
             { time: "Morning", description: "Bagel picnic in Central Park." },
             { time: "Afternoon", description: "Stroll along High Line and visit Chelsea Market." },
@@ -458,7 +458,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 3 — Museums & Departure",
+          day: "Day 3 - Museums & Departure",
           activities: [
             { time: "Morning", description: "Visit the Museum of Modern Art (MoMA)." },
             { time: "Afternoon", description: "Explore SoHo boutiques." },
@@ -508,7 +508,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
       ],
       itinerary: [
         {
-          day: "Day 1 — Malibu Ocean Views",
+          day: "Day 1 - Malibu Ocean Views",
           activities: [
             { time: "Afternoon", description: "Check in to your beach house and watch waves crash." },
             { time: "Evening", description: "Seafood dinner at Nobu Malibu right on the ocean." },
@@ -516,7 +516,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 2 — Surf Lagoon & Hiking",
+          day: "Day 2 - Surf Lagoon & Hiking",
           activities: [
             { time: "Morning", description: "Private surf lesson at Malibu Lagoon." },
             { time: "Afternoon", description: "Hike in Santa Monica mountains for panoramic views." },
@@ -524,7 +524,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 3 — Zuma Beach & Departure",
+          day: "Day 3 - Zuma Beach & Departure",
           activities: [
             { time: "Morning", description: "Relax at Zuma beach." },
             { time: "Afternoon", description: "Walk along Malibu Pier." },
@@ -574,7 +574,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
       ],
       itinerary: [
         {
-          day: "Day 1 — Glamping Campfire",
+          day: "Day 1 - Glamping Campfire",
           activities: [
             { time: "Afternoon", description: "Check in to your glamping safari tent." },
             { time: "Evening", description: "Cook s'mores over the community campfire." },
@@ -582,7 +582,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 2 — Geysers & Wildlife Tour",
+          day: "Day 2 - Geysers & Wildlife Tour",
           activities: [
             { time: "Morning", description: "Watch Old Faithful erupt and hike around the basin." },
             { time: "Afternoon", description: "Drive through Lamar Valley to spot grizzly bears and wolves." },
@@ -590,7 +590,7 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
           ],
         },
         {
-          day: "Day 3 — Grand Canyon Hike",
+          day: "Day 3 - Grand Canyon Hike",
           activities: [
             { time: "Morning", description: "Hike along the rim of the Grand Canyon of the Yellowstone." },
             { time: "Afternoon", description: "Picnic lunch near Yellowstone Lake." },
@@ -645,15 +645,15 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
     ],
     itinerary: [
       {
-        day: isInr ? "Day 1 — Arrival & Lake Pichola Sunset" : "Day 1 — Arrival & Caldera Sunset",
+        day: isInr ? "Day 1 - Arrival & Lake Pichola Sunset" : "Day 1 - Arrival & Caldera Sunset",
         activities: [
           { time: "Afternoon", description: isInr ? "Check in at your heritage mansion and freshen up." : "Check in and freshen up at your villa." },
-          { time: "Evening", description: isInr ? "Sunset boat ride on Lake Pichola with views of City Palace." : "Walk the rim path from Fira to Oia — the world's most dramatic sunset." },
+          { time: "Evening", description: isInr ? "Sunset boat ride on Lake Pichola with views of City Palace." : "Walk the rim path from Fira to Oia - the world's most dramatic sunset." },
           { time: "Night", description: isInr ? "Dinner at a rooftop restaurant with traditional Rajasthani thali." : "Dinner at Ambrosia restaurant with caldera views." },
         ],
       },
       {
-        day: isInr ? "Day 2 — City Palace & Bazaars" : "Day 2 — Island & Volcano",
+        day: isInr ? "Day 2 - City Palace & Bazaars" : "Day 2 - Island & Volcano",
         activities: [
           { time: "Morning", description: isInr ? "Visit the magnificent City Palace museum and Jagdish Temple." : "Boat tour to the active Nea Kameni volcano and hot springs." },
           { time: "Afternoon", description: isInr ? "Explore the colourful Hathi Pol bazaar for handicrafts and textiles." : "Visit Akrotiri archaeological site." },
@@ -661,9 +661,9 @@ const getMockResponse = (prompt: string, currencySymbol: string, country: string
         ],
       },
       {
-        day: isInr ? "Day 3 — Leisure & Departure" : "Day 3 — Beaches & Leisure",
+        day: isInr ? "Day 3 - Leisure & Departure" : "Day 3 - Beaches & Leisure",
         activities: [
-          { time: "Morning", description: isInr ? "Spa session at your heritage property." : "Red Beach and White Beach — volcanic sand." },
+          { time: "Morning", description: isInr ? "Spa session at your heritage property." : "Red Beach and White Beach - volcanic sand." },
           { time: "Afternoon", description: isInr ? "Vintage car museum or Shilpgram rural arts centre." : "ATV ride around the island's scenic coast." },
           { time: "Evening", description: isInr ? "Final lakeside dinner before departure." : "Farewell dinner at your villa's private terrace." },
         ],
@@ -708,7 +708,7 @@ export async function POST(req: NextRequest) {
       try {
         const cacheKey = prompt.toLowerCase().trim().replace(/\s+/g, " ");
         const cached = tavilyCache.get(cacheKey);
-        
+
         if (cached && Date.now() - cached.cachedAt < TAVILY_CACHE_TTL_MS) {
           console.log("Tavily grounding cache HIT for query:", prompt);
           searchContext = `[Real-Time Grounding Information from Web Search]:\n` +
@@ -738,7 +738,7 @@ export async function POST(req: NextRequest) {
               `Direct Answer Summary: ${searchData.answer || "N/A"}\n` +
               `Search Results: ${JSON.stringify(curatedResults)}`;
             tavilyUsed = true;
-            
+
             // Cache the response
             tavilyCache.set(cacheKey, {
               answer: searchData.answer || "N/A",
