@@ -16,15 +16,15 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Airbnb — Reimagined with AI | Anywhere Door",
+  title: "Airbnb Odyssey — AI-First Travel Reimagined",
   description:
     "Experience the future of travel planning. Our AI companion eliminates all search friction — one prompt generates curated listings, itineraries, and cost splits instantly.",
-  keywords: "Airbnb, AI travel, GenAI, anywhere door, travel planner, itinerary, India",
+  keywords: "Airbnb, Airbnb Odyssey, AI travel, GenAI, travel planner, itinerary, India",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "Airbnb Reimagined — Anywhere Door AI",
+    title: "Airbnb Odyssey — AI Travel Companion",
     description: "One prompt. Perfect trip. No filters needed.",
     type: "website",
   },

@@ -696,7 +696,7 @@ export async function POST(req: NextRequest) {
       },
     });
 
-    const systemPrompt = `You are "Anywhere Door", an elite AI travel concierge for Airbnb.
+    const systemPrompt = `You are "Airbnb Odyssey", an elite AI travel concierge for Airbnb.
 
 User context:
 - Country: ${country}
