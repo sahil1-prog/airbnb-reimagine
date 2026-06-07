@@ -112,290 +112,6 @@ function getSuggestions(country: string, city: string): string[] {
   ];
 }
 
-/** Localised mock data fallback in case network API fails */
-function getMockResponse(prompt: string, currencySymbol: string): PlanResult {
-  const isInr = currencySymbol === "₹";
-  const p = prompt.toLowerCase();
-
-  // 1. GOA
-  if (p.includes("goa")) {
-    return {
-      title: "Goa Beachfront Escape",
-      message: "Here is your custom tropical getaway to Goa. We curated beachside stays, water sports, and sunset cruises.",
-      listings: [
-        {
-          name: "Coconut Grove Beach Villa",
-          location: "Goa, North Goa",
-          price: isInr ? "₹9,500" : "$110",
-          rating: 4.97,
-          highlights: "Stunning beach views, private pool, and local chef services included.",
-          badge: "Guest Favourite",
-        },
-        {
-          name: "Heritage Anjuna Portuguese Villa",
-          location: "Anjuna, Goa",
-          price: isInr ? "₹7,800" : "$90",
-          rating: 4.91,
-          highlights: "Beautifully restored Portuguese home with lush gardens and shared pool.",
-          badge: "Superhost",
-        },
-        {
-          name: "Sunset Sea-View Penthouse",
-          location: "Candolim, Goa",
-          price: isInr ? "₹4,200" : "$50",
-          rating: 4.85,
-          highlights: "Cosy apartment overlooking the Arabian Sea, walking distance to beach.",
-          badge: "Top Rated",
-        },
-      ],
-      experiences: [
-        {
-          name: "Mandovi River Sunset Cruise",
-          location: "Panaji, Goa",
-          price: isInr ? "₹1,500" : "$18",
-          rating: 4.92,
-          highlights: "Beautiful cruise along Mandovi river with traditional Goan folk performances.",
-          badge: "Top Rated",
-        },
-        {
-          name: "Anjuna Parasailing & Water Sports",
-          location: "Anjuna Beach, Goa",
-          price: isInr ? "₹2,500" : "$30",
-          rating: 4.88,
-          highlights: "Thrilling parasailing and jet skiing with trained local safety guides.",
-          badge: "Guest Favourite",
-        }
-      ],
-      services: [
-        {
-          name: "Goan Beach Candid Portrait Photography",
-          location: "Calangute, Goa",
-          price: isInr ? "₹4,500" : "$55",
-          rating: 4.95,
-          highlights: "Professional photographer capturing sunset portraits on the beach.",
-          badge: "Superhost",
-        }
-      ],
-      itinerary: [
-        {
-          day: "Day 1 — Arrival & Beach Sunset",
-          activities: [
-            { time: "Afternoon", description: "Check in at your beach property and freshen up." },
-            { time: "Evening", description: "Sunset walk on Candolim beach followed by beachside shacks dinner." },
-            { time: "Night", description: "Enjoy live music and local fenny cocktails in Panaji." },
-          ],
-        },
-        {
-          day: "Day 2 — Heritage Tour & Spice Plantation",
-          activities: [
-            { time: "Morning", description: "Visit Basilica of Bom Jesus and Old Goa churches." },
-            { time: "Afternoon", description: "Traditional buffet lunch at Sahakari Spice Farm." },
-            { time: "Evening", description: "Scenic Mandovi River sunset cruise with Goan folk dance." },
-          ],
-        },
-        {
-          day: "Day 3 — Water Sports & Departure",
-          activities: [
-            { time: "Morning", description: "Parasailing and jet skiing at Baga Beach." },
-            { time: "Afternoon", description: "Local fish curry thali lunch." },
-            { time: "Evening", description: "Final souvenir shopping before departure." },
-          ],
-        },
-      ],
-      budget: {
-        accommodation: isInr ? "₹28,500" : "$330",
-        activities: isInr ? "₹6,000" : "$70",
-        food: isInr ? "₹9,000" : "$100",
-        transport: isInr ? "₹3,500" : "$40",
-        total: isInr ? "₹47,000" : "$540",
-        perPerson: isInr ? "₹23,500 / person" : "$270 / person",
-      },
-      questions: ["Would you prefer a stay in South Goa instead?", "Can we adjust the dining choices to be vegetarian-only?"]
-    };
-  }
-
-  // 2. MANALI
-  if (p.includes("manali") || p.includes("jibhi") || p.includes("himachal") || p.includes("cabin") || p.includes("chalet")) {
-    return {
-      title: "Himalayan Cozy Cabin Retreat",
-      message: "Escape to the mountain valleys of Himachal. We picked top glass A-frames, adventure treks, and local photo shoots.",
-      listings: [
-        {
-          name: "Snow Peak Forest Chalet",
-          location: "Manali, Himachal Pradesh",
-          price: isInr ? "₹6,800" : "$80",
-          rating: 4.93,
-          highlights: "Cosy pine-wood cabin with fireplace and panoramic Himalayan views.",
-          badge: "Top Rated",
-        },
-        {
-          name: "Riverside A-Frame Cabin",
-          location: "Jibhi, Himachal Pradesh",
-          price: isInr ? "₹5,200" : "$60",
-          rating: 4.94,
-          highlights: "Riverside wooden cottage, wooden deck, bonfire area under pine trees.",
-          badge: "Rare Find",
-        },
-        {
-          name: "Solang Valley Ski Resort Room",
-          location: "Solang, Manali",
-          price: isInr ? "₹4,500" : "$55",
-          rating: 4.78,
-          highlights: "Perfect ski chalet room, close to slopes, beautiful valley views.",
-          badge: "Superhost",
-        },
-      ],
-      experiences: [
-        {
-          name: "Jogini Waterfalls Forest Trek",
-          location: "Vashisht, Manali",
-          price: isInr ? "₹1,200" : "$15",
-          rating: 4.96,
-          highlights: "Guided hike through pine woods to the gorgeous Jogini waterfalls.",
-          badge: "Superhost",
-        },
-        {
-          name: "Solang Valley Paragliding Session",
-          location: "Solang Valley, Manali",
-          price: isInr ? "₹3,000" : "$36",
-          rating: 4.91,
-          highlights: "Tandem paragliding with panoramic views of snowcapped Himalayan peaks.",
-          badge: "Guest Favourite",
-        }
-      ],
-      services: [
-        {
-          name: "Solang Valley Snowy Portrait Session",
-          location: "Solang Valley, Manali",
-          price: isInr ? "₹5,000" : "$60",
-          rating: 4.98,
-          highlights: "Couples and solo winter photoshoot in the snow with high-res edits.",
-          badge: "New",
-        }
-      ],
-      itinerary: [
-        {
-          day: "Day 1 — Arrival & Solang Valley Views",
-          activities: [
-            { time: "Afternoon", description: "Arrive in Manali, check in to your chalet and enjoy hot chai." },
-            { time: "Evening", description: "Stroll along Mall Road and buy local woollens." },
-            { time: "Night", description: "Cosy dinner by the fireplace." },
-          ],
-        },
-        {
-          day: "Day 2 — Paragliding & Jogini Waterfall Trek",
-          activities: [
-            { time: "Morning", description: "Paragliding in Solang Valley." },
-            { time: "Afternoon", description: "Scenic trek to Jogini Waterfalls near Vashisht village." },
-            { time: "Evening", description: "Dip in Vashisht hot springs to relax." },
-          ],
-        },
-        {
-          day: "Day 3 — Solang Valley Skiing & Departure",
-          activities: [
-            { time: "Morning", description: "Skiing session or cable car ride." },
-            { time: "Afternoon", description: "Café hopping in Old Manali." },
-            { time: "Evening", description: "Depart back to Delhi." },
-          ],
-        },
-      ],
-      budget: {
-        accommodation: isInr ? "₹27,200" : "$320",
-        activities: isInr ? "₹12,000" : "$140",
-        food: isInr ? "₹10,000" : "$120",
-        transport: isInr ? "₹8,000" : "$95",
-        total: isInr ? "₹57,200" : "$675",
-        perPerson: isInr ? "₹14,300 / person" : "$168.75 / person",
-      },
-      questions: ["Would you like to include an overnight camp stay?", "Should we budget for dynamic transit options?"]
-    };
-  }
-
-  // DEFAULT FALLBACK
-  return {
-    title: "Custom Heritage Holiday",
-    message: "Here is your tailored holiday plan. We have curated gorgeous local stays and immersive activities for you.",
-    listings: [
-      {
-        name: isInr ? "Clifftop Heritage Mansion" : "Clifftop Villa with Infinity Pool",
-        location: isInr ? "Udaipur, India" : "Santorini, Greece",
-        price: isInr ? "₹12,500" : "$220",
-        rating: 4.97,
-        highlights: "Breathtaking views, private infinity pool, and custom local cuisines.",
-        badge: "Guest Favourite",
-      },
-      {
-        name: isInr ? "Backwater Houseboat Suite" : "Designer Cave Suite",
-        location: isInr ? "Alleppey, India" : "Oia, Greece",
-        price: isInr ? "₹8,200" : "$180",
-        rating: 4.93,
-        highlights: "Luxury traditional suite with local chef services included.",
-        badge: "Superhost",
-      },
-      {
-        name: isInr ? "Snow Peak Forest Chalet" : "Luxury Seaview Penthouse",
-        location: isInr ? "Manali, India" : "Fira, Greece",
-        price: isInr ? "₹6,800" : "$150",
-        rating: 4.89,
-        highlights: "Cosy fireplace, panoramic mountain/ocean view terrace deck.",
-        badge: "Top Rated",
-      },
-    ],
-    experiences: [
-      {
-        name: "Historical Heritage Tour",
-        location: isInr ? "Udaipur, India" : "Fira, Greece",
-        price: isInr ? "₹2,500" : "$35",
-        rating: 4.96,
-        highlights: "Guided walk with a local archaeologist around historical landmarks.",
-        badge: "Superhost",
-      }
-    ],
-    services: [
-      {
-        name: "Candid Vacation Portrait Shoot",
-        location: isInr ? "Udaipur, India" : "Santorini, Greece",
-        price: isInr ? "₹5,500" : "$70",
-        rating: 4.92,
-        highlights: "Professional photographer session with next-day digital gallery.",
-        badge: "New",
-      }
-    ],
-    itinerary: [
-      {
-        day: "Day 1 — Arrival & Sunset View",
-        activities: [
-          { time: "Afternoon", description: "Arrive at your property and check in." },
-          { time: "Evening", description: "Scenic sunset stroll followed by dinner." },
-        ],
-      },
-      {
-        day: "Day 2 — Sightseeing & Local Experiences",
-        activities: [
-          { time: "Morning", description: "Enjoy a guided tour of regional highlights." },
-          { time: "Afternoon", description: "Taste authentic cuisines at a local bazaar." },
-        ],
-      },
-      {
-        day: "Day 3 — Farewell & Departure",
-        activities: [
-          { time: "Morning", description: "Last souvenir shopping and coffee." },
-          { time: "Afternoon", description: "Depart for the airport." },
-        ],
-      },
-    ],
-    budget: {
-      accommodation: isInr ? "₹37,500" : "$550",
-      activities: isInr ? "₹8,000" : "$100",
-      food: isInr ? "₹12,000" : "$150",
-      transport: isInr ? "₹5,500" : "$70",
-      total: isInr ? "₹63,000" : "$870",
-      perPerson: isInr ? "₹15,750 / person" : "$217.50 / person",
-    },
-    questions: ["Would you like to extend your trip?", "Should we change the accommodation styles?"]
-  };
-}
-
 export default function AnywhereDoor({
   isOpen,
   onClose,
@@ -411,7 +127,7 @@ export default function AnywhereDoor({
   const [result, setResult] = useState<PlanResult | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [messages, setMessages] = useState<any[]>([]);
-
+  
   // Settings Panel State
   const [showSettings, setShowSettings] = useState(false);
   const [tavilyApiKey, setTavilyApiKey] = useState("");
@@ -501,7 +217,7 @@ export default function AnywhereDoor({
     setError(null);
     setMessages(updatedHistory);
     setPrompt("");
-
+    
     runStepsAnimation();
 
     try {
@@ -515,12 +231,12 @@ export default function AnywhereDoor({
           city,
           history: messages, // send history before this turn
           useTavily,
-          tavilyApiKey,
+          tavilyApiKey
         }),
       });
 
       const timeoutPromise = new Promise((_, reject) =>
-        setTimeout(() => reject(new Error("Request timed out after 60 seconds. Falling back to offline generation...")), 60000)
+        setTimeout(() => reject(new Error("Request timed out after 15 seconds. Please check your internet connection or Tavily Key.")), 15000)
       );
 
       const res = await Promise.race([fetchPromise, timeoutPromise]) as Response;
@@ -531,31 +247,24 @@ export default function AnywhereDoor({
 
       setSteps(THINKING_STEPS.map((label) => ({ label, status: "done" })));
       await new Promise((r) => setTimeout(r, 400));
-
+      
+      // Construct AI response message
       const assistantMsg = { role: "model", parts: [{ text: JSON.stringify(data) }] };
       const finalHistory = [...updatedHistory, assistantMsg];
-
+      
       setMessages(finalHistory);
       setResult(data);
       if (onPlanGenerated) {
         onPlanGenerated(data, finalHistory);
       }
     } catch (err: any) {
-      console.warn("API call failed or timed out. Falling back to mock generator:", err?.message || err);
-      // Fall back to mock response *only after* a failure occurs
-      const mock = getMockResponse(finalPrompt, currency);
+      console.warn("API call failed or timed out:", err?.message || err);
+      setError(err?.message || "Failed to compile your travel plan. Please check your network connection.");
+      setSteps(THINKING_STEPS.map((label) => ({ label, status: "error" })));
       
-      setSteps(THINKING_STEPS.map((label) => ({ label, status: "done" })));
-      await new Promise((r) => setTimeout(r, 400));
-
-      const assistantMsg = { role: "model", parts: [{ text: JSON.stringify(mock) }] };
-      const finalHistory = [...updatedHistory, assistantMsg];
-
-      setMessages(finalHistory);
-      setResult(mock);
-      if (onPlanGenerated) {
-        onPlanGenerated(mock, finalHistory);
-      }
+      // Rollback user input on failure
+      setMessages(messages);
+      setPrompt(finalPrompt);
     } finally {
       setIsLoading(false);
     }
@@ -585,7 +294,7 @@ export default function AnywhereDoor({
   return (
     <>
       <div className={`drawer-overlay${isOpen ? " open" : ""}`} onClick={onClose} aria-hidden="true" />
-      <div className={`drawer${isOpen ? " open" : ""}`} role="dialog" aria-modal="true" aria-label="Airbnb Odyssey AI Travel Planner">
+      <div className={`drawer${isOpen ? " open" : ""}`} role="dialog" aria-modal="true" aria-label="Anywhere Door AI Travel Planner">
         
         {/* Header */}
         <div className="drawer-header">
@@ -594,7 +303,7 @@ export default function AnywhereDoor({
               <Sparkles size={18} fill="currentColor" />
             </div>
             <div className="drawer-title-text">
-              <h2>Airbnb Odyssey</h2>
+              <h2>Anywhere Door</h2>
               <p>AI Travel Companion · {country} · {currency}</p>
             </div>
           </div>
@@ -650,13 +359,13 @@ export default function AnywhereDoor({
                   placeholder="Enter tvly-..."
                   value={tavilyApiKey}
                   onChange={(e) => {
-                     setTavilyApiKey(e.target.value);
-                     localStorage.setItem("tavily-api-key", e.target.value);
+                    setTavilyApiKey(e.target.value);
+                    localStorage.setItem("tavily-api-key", e.target.value);
                   }}
                 />
                 {!tavilyApiKey && (
-                  <span style={{ fontSize: 10, color: "#f87171", fontWeight: 600 }}>
-                    ⚠️ Server key will be used as fallback.
+                  <span style={{ fontSize: 10, color: "#ef4444", fontWeight: 600 }}>
+                    ⚠️ Provide your key. Defaults to server key if configured.
                   </span>
                 )}
               </div>
@@ -679,14 +388,40 @@ export default function AnywhereDoor({
                   textContent = msg.parts[0].text;
                 }
 
-                return (
-                  <div
-                    key={idx}
-                    className={`chat-bubble ${isUser ? "user" : "assistant"}`}
-                  >
-                    {textContent}
-                  </div>
-                );
+                if (isUser) {
+                  return (
+                    <div key={idx} className="chat-bubble user" style={{
+                      alignSelf: "flex-end",
+                      background: "var(--airbnb-coral)",
+                      color: "#fff",
+                      padding: "10px 16px",
+                      borderRadius: "18px 18px 2px 18px",
+                      fontSize: 13,
+                      maxWidth: "80%",
+                      lineHeight: "1.4",
+                      fontFamily: "var(--font-body)"
+                    }}>
+                      {textContent}
+                    </div>
+                  );
+                } else {
+                  return (
+                    <div key={idx} className="chat-bubble assistant" style={{
+                      alignSelf: "flex-start",
+                      background: "var(--bg-glass)",
+                      border: "1px solid var(--border-subtle)",
+                      color: "var(--text-primary)",
+                      padding: "10px 16px",
+                      borderRadius: "18px 18px 18px 2px",
+                      fontSize: 13,
+                      maxWidth: "85%",
+                      lineHeight: "1.4",
+                      fontFamily: "var(--font-body)"
+                    }}>
+                      {textContent}
+                    </div>
+                  );
+                }
               })}
             </div>
           )}

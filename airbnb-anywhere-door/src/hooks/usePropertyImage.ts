@@ -50,8 +50,8 @@ function setSessionCache(key: string, entry: SessionEntry) {
  * Caches results in sessionStorage and local module memory to avoid repeat API calls
  * and eliminate visual layout shifts on component mounts.
  */
-export function usePropertyImage(query: string, enabled: boolean = true): ImageResult {
-  const cacheKey = query.toLowerCase().trim();
+export function usePropertyImage(query: string, enabled: boolean = true, type: "stay" | "experience" | "service" = "stay"): ImageResult {
+  const cacheKey = `${type}_${query.toLowerCase().trim()}`;
 
   // Determine if we have a synchronous memory or session cache hit before rendering
   const getCachedEntry = (): { url: string; alt: string; photographer: string } | null => {
@@ -104,7 +104,7 @@ export function usePropertyImage(query: string, enabled: boolean = true): ImageR
     let cancelled = false;
     setResult((prev) => ({ ...prev, loading: true }));
 
-    fetch(`/api/images?q=${encodeURIComponent(query)}&size=large`)
+    fetch(`/api/images?q=${encodeURIComponent(query)}&size=large&type=${type}`)
       .then((r) => r.json())
       .then((data) => {
         if (cancelled) return;

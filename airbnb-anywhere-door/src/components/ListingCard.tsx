@@ -19,6 +19,8 @@ interface ListingCardProps {
   wishlisted?: boolean;
   onWishlistToggle?: () => void;
   priceUnit?: string;
+  type?: string;
+  imageUrl?: string;
 }
 
 export default function ListingCard({
@@ -36,15 +38,25 @@ export default function ListingCard({
   wishlisted,
   onWishlistToggle,
   priceUnit = "/ night",
+  type,
+  imageUrl: customImageUrl,
 }: ListingCardProps) {
   const [localWishlisted, setLocalWishlisted] = useState(false);
   const [imgError, setImgError] = useState(false);
 
-  // Fetch real Pexels image — query = "location + name keywords"
+  // Fetch real Pexels image if no custom imageUrl is provided OR if the custom imageUrl fails to load
   const imageQuery = `${location} ${name.split(" ").slice(0, 3).join(" ")}`;
-  const { url: imageUrl, alt: imageAlt, photographer, loading: imgLoading } = usePropertyImage(imageQuery);
+  const shouldFetchPexels = !customImageUrl || imgError;
+  const resolvedType = (type === "service" || type === "experience") ? type : "stay";
+  const { url: pexelsUrl, alt: pexelsAlt, photographer, loading: imgLoading } = usePropertyImage(
+    shouldFetchPexels ? imageQuery : "",
+    shouldFetchPexels,
+    resolvedType
+  );
 
-  const showRealImage = imageUrl && !imgError;
+  const imageUrl = (!imgError && customImageUrl) ? customImageUrl : pexelsUrl;
+  const imageAlt = (!imgError && customImageUrl) ? name : pexelsAlt;
+  const showRealImage = !!imageUrl;
   const isWishlisted = wishlisted !== undefined ? wishlisted : localWishlisted;
 
   const handleWishlistClick = (e: React.MouseEvent) => {
@@ -56,12 +68,12 @@ export default function ListingCard({
     }
   };
 
-  // Get matching vector fallback icon based on ID type
+  // Get matching vector fallback icon based on ID type or type prop
   const renderFallbackIcon = () => {
-    if (id.startsWith("service")) {
+    if (type === "service" || id.startsWith("service")) {
       return <Camera size={38} strokeWidth={1.5} style={{ color: "rgba(255,255,255,0.4)" }} />;
     }
-    if (id.startsWith("exp")) {
+    if (type === "experience" || id.startsWith("exp")) {
       return <Compass size={38} strokeWidth={1.5} style={{ color: "rgba(255,255,255,0.4)" }} />;
     }
     return <Home size={38} strokeWidth={1.5} style={{ color: "rgba(255,255,255,0.4)" }} />;
@@ -147,7 +159,7 @@ export default function ListingCard({
         )}
 
         {/* Photographer credit (required by Pexels ToS) */}
-        {showRealImage && photographer && (
+        {showRealImage && photographer && shouldFetchPexels && (
           <div
             style={{
               position: "absolute",
@@ -155,11 +167,15 @@ export default function ListingCard({
               left: 12,
               zIndex: 3,
               fontSize: 9,
-              color: "rgba(255,255,255,0.5)",
+              color: "rgba(255,255,255,0.7)",
+              background: "rgba(0, 0, 0, 0.45)",
+              padding: "2px 6px",
+              borderRadius: "var(--radius-sm)",
+              backdropFilter: "blur(4px)",
               fontFamily: "var(--font-body)",
             }}
           >
-            📷 {photographer}
+            📷 Pexels / {photographer}
           </div>
         )}
       </div>

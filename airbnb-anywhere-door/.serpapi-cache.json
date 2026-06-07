@@ -1,0 +1,549 @@
+{
+  "v2-roorkee-india": {
+    "data": {
+      "stays": [
+        {
+          "id": "serp-stay-1",
+          "name": "HOTEL RAJMAHAL Roorkee, Haridwar (UK)",
+          "location": "Roorkee, India",
+          "price": 2371,
+          "rating": 4.5,
+          "tags": [
+            "Breakfast ($)",
+            "Free Wi-Fi",
+            "Free parking"
+          ],
+          "badge": "Guest Favourite",
+          "gradient": "linear-gradient(135deg, #1a1200 0%, #2e2000 50%, #4a3300 100%)",
+          "emoji": "🌲",
+          "category": "Cabins",
+          "country": "India",
+          "imageUrl": "https://photos.hotelbeds.com/giata/original/83/839931/839931a_hb_a_014.jpg"
+        },
+        {
+          "id": "serp-stay-2",
+          "name": "Motel Divine International, Roorkee",
+          "location": "Roorkee, India",
+          "price": 1883,
+          "rating": 3.8,
+          "tags": [
+            "Free breakfast",
+            "Free Wi-Fi",
+            "Free parking"
+          ],
+          "badge": "Superhost",
+          "gradient": "linear-gradient(135deg, #0a2a1a 0%, #0f3d25 50%, #1a5c35 100%)",
+          "emoji": "🏰",
+          "category": "Mansions",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFhw869S65PaVUbm_3fhhX9LI1hKBLBr4-MLuyKYoSlqgW92dNTxUFxNQ40lpAakfWYujuRBYwgWg-On0USoZ6W30HmlQPz9aDeyelbLKQXIo0Ex1i0FJiB8NTwbN0CPT2SQYAQcg=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-3",
+          "name": "Hotel Siddharth",
+          "location": "Roorkee, India",
+          "price": 2088,
+          "rating": 3.9,
+          "tags": [
+            "Free breakfast",
+            "Free Wi-Fi",
+            "Free parking"
+          ],
+          "badge": "Top Rated",
+          "gradient": "linear-gradient(135deg, #1e110a 0%, #3a2214 50%, #52311d 100%)",
+          "emoji": "🏔️",
+          "category": "Mountains",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEYsXJL0sRMN-TX1haD-ZBYATlMmIXQF1lLoXWR_0w5dfntyllUfE02t47wIuBQYbpshqFFTa1E-PLsPGCaA27D8qxMZN2rAC2qrdOETrNwW9DLlp4yUkLc-iZLIBVfyWcWcxrb=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-4",
+          "name": "Itsy Hotels K K Residency Staywell",
+          "location": "Roorkee, India",
+          "price": 1972,
+          "rating": 4,
+          "tags": [
+            "Free breakfast",
+            "Free Wi-Fi",
+            "Free parking"
+          ],
+          "badge": "Rare Find",
+          "gradient": "linear-gradient(135deg, #1a0f2e 0%, #2d1b4e 50%, #3d2470 100%)",
+          "emoji": "🌊",
+          "category": "Lakefront",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEnsPZAaW8yM21qnpM_SupyfeJzdBhtaN-xgF4hxP81133ShBiqDPx8220CmME3uRM3QS49nnFxJNkQzTleOH0UDpHZAWniYb2c64_6M-l1iX-5Xxm_mjE6LVjHPFerCkZPBrNm7KwUODTP=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-5",
+          "name": "Hotel Glumol",
+          "location": "Roorkee, India",
+          "price": 3675,
+          "rating": 4.9,
+          "tags": [
+            "Free WiFi",
+            "AC",
+            "Room Service"
+          ],
+          "badge": "Guest Favourite",
+          "gradient": "linear-gradient(135deg, #0d1a2a 0%, #1a2d45 50%, #243d60 100%)",
+          "emoji": "🏯",
+          "category": "Heritage",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAF4q-r3xsq2dhl6otZkwQ-8LHWJXk6UYB77i5LyyWskAe6EcUaW0hqF5pyvwDgnKHyKX-FcrE-Rb2GWtrZUEVrHVMZk0-AyJwvtw-nJT1FB2J70PsAMfpzrooLC9guAsOSeP8dEWPDW2DZg=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-6",
+          "name": "Sultan Paradise",
+          "location": "Roorkee, India",
+          "price": 1945,
+          "rating": 4.8,
+          "tags": [
+            "Free WiFi",
+            "AC",
+            "Room Service"
+          ],
+          "badge": "Superhost",
+          "gradient": "linear-gradient(135deg, #051a24 0%, #0d3246 50%, #184c68 100%)",
+          "emoji": "🏙️",
+          "category": "City",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHLpOp04BY0v3RAjBVDS0t2gzNTiU5mi4QCXVgcFsJXD2bLZppzYBvLUtb-wX0EGURglLaBLQR7g_D-fhTigwKovMmFvyHyZqdbSXbJuhMWMG1F0IrwNCqtGtcmUw4JnOv_h6ZcFrs-cRqg=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-7",
+          "name": "Hotel All Seasons",
+          "location": "Roorkee, India",
+          "price": 2258,
+          "rating": 3.9,
+          "tags": [
+            "Free breakfast",
+            "Free Wi-Fi",
+            "Parking"
+          ],
+          "badge": "Top Rated",
+          "gradient": "linear-gradient(135deg, #2b1f15 0%, #423021 50%, #5c442f 100%)",
+          "emoji": "🌿",
+          "category": "Countryside",
+          "country": "India",
+          "imageUrl": "http://t2.gstatic.com/images?q=tbn:ANd9GcTIDWcXlTmIIWk1ZAKO6tbox9WQf8t2OnHXNkiBYdCse7WZVt2d"
+        },
+        {
+          "id": "serp-stay-8",
+          "name": "Hotel Heavens garden",
+          "location": "Roorkee, India",
+          "price": 2100,
+          "rating": 3.9,
+          "tags": [
+            "Breakfast ($)",
+            "Wi-Fi",
+            "Free parking"
+          ],
+          "badge": "Rare Find",
+          "gradient": "linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 50%, #3e3e3e 100%)",
+          "emoji": "🌲",
+          "category": "Cabins",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAH4pwcJZyub9fvHFv7euabPiF-I2-LT7f9Ho4uwQEidpVfvR6GUV8xod2Tp8upjCiSGkZx_hngeXfW6zWxU6vFXUrp_9AVwuTWVVsdRUYryUbeYNGABAAE0DOJ3l8y1Bqjkt0CCJg=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-9",
+          "name": "Hotel Deep Residency",
+          "location": "Roorkee, India",
+          "price": 3140,
+          "rating": 4,
+          "tags": [
+            "Free breakfast",
+            "Free Wi-Fi",
+            "Free parking"
+          ],
+          "badge": "Guest Favourite",
+          "gradient": "linear-gradient(135deg, #1a1200 0%, #2e2000 50%, #4a3300 100%)",
+          "emoji": "🏰",
+          "category": "Mansions",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHV4MqYijmcKmnBMcozDh1G3sRErqGg4DY8v0bqBhajfdNUEL-R3uUDFkGWgQNCzHyN9wJ0mDpj-tKVUt68m5XXcAchfFi1awX3P_P29_iGdm2Zp18rrrPPoi5C7KuArg610SVGlw=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-10",
+          "name": "Hotel Centrum Roorkee",
+          "location": "Roorkee, India",
+          "price": 8500,
+          "rating": 3.9,
+          "tags": [
+            "Free breakfast",
+            "Free Wi-Fi",
+            "Free parking"
+          ],
+          "badge": "Superhost",
+          "gradient": "linear-gradient(135deg, #0a2a1a 0%, #0f3d25 50%, #1a5c35 100%)",
+          "emoji": "🏔️",
+          "category": "Mountains",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAE0LoUdyKVP8ttTyfpIUTylJ5Vb8GU9pXdz5R6py-cJ_RYIrl9cVUEIRDJGcduoU2s0c2UoWU27WWuS1gi04X522fEIB5O8x9c2CIIfx6hTe-OatuaKSytXi26xVpBxAnasV7KmhGSeG99p=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-11",
+          "name": "Olive Premium Apartment! - Two-Bedroom Apartment",
+          "location": "Roorkee, India",
+          "price": 3356,
+          "rating": 4.75,
+          "tags": [
+            "Air conditioning",
+            "Heating",
+            "Indoor pool"
+          ],
+          "badge": "Top Rated",
+          "gradient": "linear-gradient(135deg, #1e110a 0%, #3a2214 50%, #52311d 100%)",
+          "emoji": "🌊",
+          "category": "Lakefront",
+          "country": "India",
+          "imageUrl": "https://static.cupid.travel/hotels/493689356.jpg"
+        },
+        {
+          "id": "serp-stay-12",
+          "name": "Hotel GSP Pacific",
+          "location": "Roorkee, India",
+          "price": 8500,
+          "rating": 4.8,
+          "tags": [
+            "Free breakfast",
+            "Free Wi-Fi",
+            "Free parking"
+          ],
+          "badge": "Rare Find",
+          "gradient": "linear-gradient(135deg, #1a0f2e 0%, #2d1b4e 50%, #3d2470 100%)",
+          "emoji": "🏯",
+          "category": "Heritage",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHAuNhZS4ijKNKYGQhGSwsEvwBD0Un_NaXtt3W9y60wh9gwY0T7cHGPKWUFd2pnUVw-9BDznMHnJi7hNzG7tSS4tRy3GnZVibakU26Dm48FmYyDMFgTclKEuTa6_mZtX61G2CtyOBw_ENfU=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-13",
+          "name": "Motel Blue Sapphire",
+          "location": "Roorkee, India",
+          "price": 8500,
+          "rating": 4.1,
+          "tags": [
+            "Free breakfast",
+            "Free Wi-Fi",
+            "Air conditioning"
+          ],
+          "badge": "Guest Favourite",
+          "gradient": "linear-gradient(135deg, #0d1a2a 0%, #1a2d45 50%, #243d60 100%)",
+          "emoji": "🏙️",
+          "category": "City",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAHuXODra7LSyOzxqgSxglebQY2ZwhDqK2GRE0eNoHSeOIrjLp1B_Y5jounJui-zWYTfALFrHXOZsrYRjRcm495tBd9qOOx5qBERkMrFMPmrbHyrrq-3yY4t_z0lLVLmghLa1Foi8g=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-14",
+          "name": "Motel Dwarika - Hotel in Roorkee | Bhagirath Kunj",
+          "location": "Roorkee, India",
+          "price": 8500,
+          "rating": 4.8,
+          "tags": [
+            "Free WiFi",
+            "AC",
+            "Room Service"
+          ],
+          "badge": "Superhost",
+          "gradient": "linear-gradient(135deg, #051a24 0%, #0d3246 50%, #184c68 100%)",
+          "emoji": "🌿",
+          "category": "Countryside",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGUGTyiBRiwZ_jkwBDsYZA6Re_Ei_tIRonEIYzjw9551TrD2PFEsjqYmEuEeOZSUqJd5phZuwCrP2k4yM-9mlkV90ll6bBnneDNmSjp5uEiYDBQNhV6u0vmRwrROtpMA75aiLJAHkPZ0KE=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-15",
+          "name": "Hotel Majestic",
+          "location": "Roorkee, India",
+          "price": 8500,
+          "rating": 4.9,
+          "tags": [
+            "Free Wi-Fi",
+            "Free parking",
+            "Air conditioning"
+          ],
+          "badge": "Top Rated",
+          "gradient": "linear-gradient(135deg, #2b1f15 0%, #423021 50%, #5c442f 100%)",
+          "emoji": "🌲",
+          "category": "Cabins",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAFyfwGEvCQeHx8x1IxaJOj476ZUctYoibwkBu3icnWyMsZDjdcxE1l56AAozl3SVdP3tgA2MSGR6GM1qlgbdbEPzfdJXeEzfIjD5WmUdhO-pWCLsQN6kiNruCyA9z3aR5MmwCrDD2UxYcdj=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-16",
+          "name": "OYO Hotel Moon Light",
+          "location": "Roorkee, India",
+          "price": 1480,
+          "rating": 3.2,
+          "tags": [
+            "Breakfast",
+            "Free Wi-Fi",
+            "Parking"
+          ],
+          "badge": "Rare Find",
+          "gradient": "linear-gradient(135deg, #1c1c1c 0%, #2d2d2d 50%, #3e3e3e 100%)",
+          "emoji": "🏰",
+          "category": "Mansions",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAGlurLOwlrEraIBqsQTDmhHqMkjtrpJZpXFUUg2BBXAxaX2I3YeOV7aS-rItVxOXHrUhfW4z7niY3Aw0xpWddxhh1sT7h7yxXn6v2ApF8ZiKdESrMPZ9nsGnM9z3DPU8J0Df1h4NQ=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-17",
+          "name": "Hotel Maya Palace",
+          "location": "Roorkee, India",
+          "price": 1313,
+          "rating": 3.6,
+          "tags": [
+            "Wi-Fi",
+            "Parking",
+            "Pool"
+          ],
+          "badge": "Guest Favourite",
+          "gradient": "linear-gradient(135deg, #1a1200 0%, #2e2000 50%, #4a3300 100%)",
+          "emoji": "🏔️",
+          "category": "Mountains",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEiDr3iniP_NWsLTBXkTdKSjEWlJdISZuvD_NZfYw49IX8mzrxJ7JLx993-vHJXsRlQdYpNg2kePYHFTFHtIwz9d9Q4tfOS5QT6k9EQ45kHEgHb1XtngBsZ1jNdeVrzxP31ot4=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-18",
+          "name": "Tranquil Haven",
+          "location": "Roorkee, India",
+          "price": 1404,
+          "rating": 5,
+          "tags": [
+            "Free WiFi",
+            "AC",
+            "Room Service"
+          ],
+          "badge": "Superhost",
+          "gradient": "linear-gradient(135deg, #0a2a1a 0%, #0f3d25 50%, #1a5c35 100%)",
+          "emoji": "🌊",
+          "category": "Lakefront",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAEPgANB6T-OyjO2VT1-g-77ER9qz7Bl7NzqBBwPu3rHby-lQTgYTgQzq7JZz3HLqG8VXdU25H1w43IUhXGDfurislYg0fnEqEttDH0wJ7tVEJ23kvcdMG7mUp3nfxEeynDy6dRH2TCJAOE=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-19",
+          "name": "Preferred Hotel And Restaurant | Rampur Chungi",
+          "location": "Roorkee, India",
+          "price": 8500,
+          "rating": 4.7,
+          "tags": [
+            "Free WiFi",
+            "AC",
+            "Room Service"
+          ],
+          "badge": "Top Rated",
+          "gradient": "linear-gradient(135deg, #1e110a 0%, #3a2214 50%, #52311d 100%)",
+          "emoji": "🏯",
+          "category": "Heritage",
+          "country": "India",
+          "imageUrl": "https://lh3.googleusercontent.com/gps-cs-s/APNQkAG1PgtikP6TiGBYBheaZrQkIAA6SqyKCv1X4vlBvXA4Fc_8teJBnHtbVNNy9BFzEUy4TdnW6h7E_AEf1Bzf1gJxuDTnq6BBc2YdLZ5JFJVd2e783eaUTrDPR0l3JZN7TMZVaBU=w600-h400-n-k-no-v1"
+        },
+        {
+          "id": "serp-stay-20",
+          "name": "Olive Premium Apartment!",
+          "location": "Roorkee, India",
+          "price": 3392,
+          "rating": 4.6,
+          "tags": [
+            "Air conditioning",
+            "Elevator",
+            "Heating"
+          ],
+          "badge": "Rare Find",
+          "gradient": "linear-gradient(135deg, #1a0f2e 0%, #2d1b4e 50%, #3d2470 100%)",
+          "emoji": "🏙️",
+          "category": "City",
+          "country": "India",
+          "imageUrl": "https://xx.bstatic.com/xdata/w/hotel/840x460_watermarked_standard/UlbWNZwXU4abzLROPkT5RU7uDzls3T03Gme0nSmjDGdd3WWya_HOc-7_WWcYVO1y-ZMAHtT9EjDnUU75Rbi6K4frRE1jkK5vlWnQo8eh7BJYnc46D-06ug==.jpg"
+        }
+      ],
+      "experiences": [
+        {
+          "id": "dyn-exp-1",
+          "name": "Upper Ganges Canal Inspection",
+          "location": "Ganges Canal, Roorkee",
+          "price": 0,
+          "rating": 4.7,
+          "tags": [
+            "Engineering",
+            "History"
+          ],
+          "badge": "Popular",
+          "gradient": "linear-gradient(135deg, #00c6ff 0%, #0072ff 100%)",
+          "emoji": "🏗️",
+          "category": "Sightseeing",
+          "country": "India"
+        },
+        {
+          "id": "dyn-exp-2",
+          "name": "Solani Aqueduct Sunset Walk",
+          "location": "Solani River, Roorkee",
+          "price": 0,
+          "rating": 4.8,
+          "tags": [
+            "Nature",
+            "Photography"
+          ],
+          "badge": "Best View",
+          "gradient": "linear-gradient(135deg, #ff9a9e 0%, #fecfef 100%)",
+          "emoji": "🌅",
+          "category": "Outdoor",
+          "country": "India"
+        },
+        {
+          "id": "dyn-exp-3",
+          "name": "Roorkee Cantonment Heritage Trail",
+          "location": "Cantonment Area, Roorkee",
+          "price": 0,
+          "rating": 4.5,
+          "tags": [
+            "History",
+            "Architecture"
+          ],
+          "badge": "Cultural",
+          "gradient": "linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%)",
+          "emoji": "🏛️",
+          "category": "Sightseeing",
+          "country": "India"
+        },
+        {
+          "id": "dyn-exp-4",
+          "name": "Piran Kaliyar Sharif Visit",
+          "location": "Kaliyar, Roorkee",
+          "price": 0,
+          "rating": 4.6,
+          "tags": [
+            "Spiritual",
+            "Heritage"
+          ],
+          "badge": "Highly Rated",
+          "gradient": "linear-gradient(135deg, #f6d365 0%, #fda085 100%)",
+          "emoji": "🕌",
+          "category": "Spiritual",
+          "country": "India"
+        },
+        {
+          "id": "dyn-exp-5",
+          "name": "Local Bazaar Cultural Walk",
+          "location": "Civil Lines, Roorkee",
+          "price": 0,
+          "rating": 4.2,
+          "tags": [
+            "Shopping",
+            "Local Food"
+          ],
+          "badge": "Authentic",
+          "gradient": "linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%)",
+          "emoji": "🛍️",
+          "category": "Culture",
+          "country": "India"
+        },
+        {
+          "id": "dyn-exp-6",
+          "name": "Cenotaph Memorial Exploration",
+          "location": "Roorkee City Center, Roorkee",
+          "price": 0,
+          "rating": 4.4,
+          "tags": [
+            "History",
+            "Monument"
+          ],
+          "badge": "Historic",
+          "gradient": "linear-gradient(135deg, #cfd9df 0%, #e2ebf0 100%)",
+          "emoji": "⏳",
+          "category": "Sightseeing",
+          "country": "India"
+        }
+      ],
+      "services": [
+        {
+          "id": "dyn-service-1",
+          "name": "Classic Frames Photography",
+          "location": "Civil Lines, Roorkee",
+          "price": 5000,
+          "rating": 4.9,
+          "tags": [
+            "Portrait",
+            "Events"
+          ],
+          "badge": "Professional",
+          "gradient": "linear-gradient(135deg, #1f1c2c 0%, #928dab 100%)",
+          "emoji": "📷",
+          "category": "Photography",
+          "country": "India"
+        },
+        {
+          "id": "dyn-service-2",
+          "name": "Glory Make-up Studio",
+          "location": "Main Market, Roorkee",
+          "price": 3500,
+          "rating": 4.7,
+          "tags": [
+            "Bridal",
+            "Party"
+          ],
+          "badge": "Top Rated",
+          "gradient": "linear-gradient(135deg, #ff0844 0%, #ffb199 100%)",
+          "emoji": "💄",
+          "category": "Make-up",
+          "country": "India"
+        },
+        {
+          "id": "dyn-service-3",
+          "name": "Digital Lens Roorkee",
+          "location": "Link Road, Roorkee",
+          "price": 4500,
+          "rating": 4.8,
+          "tags": [
+            "Candid",
+            "Cinematography"
+          ],
+          "badge": "Creative",
+          "gradient": "linear-gradient(135deg, #00b09b 0%, #96c93d 100%)",
+          "emoji": "🎞️",
+          "category": "Photography",
+          "country": "India"
+        },
+        {
+          "id": "dyn-service-4",
+          "name": "Aura Bridal Makeovers",
+          "location": "Near Canal Road, Roorkee",
+          "price": 8000,
+          "rating": 4.9,
+          "tags": [
+            "Bridal",
+            "Consultation"
+          ],
+          "badge": "Premium",
+          "gradient": "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
+          "emoji": "✨",
+          "category": "Make-up",
+          "country": "India"
+        },
+        {
+          "id": "dyn-service-5",
+          "name": "Snapshot Studio Roorkee",
+          "location": "Railway Road, Roorkee",
+          "price": 2500,
+          "rating": 4.5,
+          "tags": [
+            "Passport",
+            "Family"
+          ],
+          "badge": "Quick",
+          "gradient": "linear-gradient(135deg, #7028e4 0%, #e5b2ca 100%)",
+          "emoji": "📸",
+          "category": "Photography",
+          "country": "India"
+        }
+      ]
+    },
+    "timestamp": 1780815164566
+  }
+}

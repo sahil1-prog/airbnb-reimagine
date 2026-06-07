@@ -22,8 +22,9 @@ interface CacheEntry {
 const imageCache = new Map<string, CacheEntry>();
 const CACHE_TTL_MS = 60 * 60 * 1000; // 1 hour
 
-function getCacheKey(query: string): string {
-  return query.toLowerCase().trim();
+function getCacheKey(query: string, type: string | null): string {
+  const t = type ? type.toLowerCase().trim() : "stay";
+  return `${t}_${query.toLowerCase().trim()}`;
 }
 
 function isCacheValid(entry: CacheEntry): boolean {
@@ -31,7 +32,7 @@ function isCacheValid(entry: CacheEntry): boolean {
 }
 
 /** Curates a better search query from location/name for more accurate Pexels results */
-function buildSearchQuery(query: string): string {
+function buildSearchQuery(query: string, type: string | null): string {
   const locationKeywords: Record<string, string> = {
     // India
     goa: "goa beach villa",
@@ -53,18 +54,36 @@ function buildSearchQuery(query: string): string {
   };
 
   const lower = query.toLowerCase();
-  for (const [key, curated] of Object.entries(locationKeywords)) {
-    if (lower.includes(key)) return curated;
+
+  // Stays: use curated location keywords, fall back to luxury rental
+  if (!type || type === "stay") {
+    for (const [key, curated] of Object.entries(locationKeywords)) {
+      if (lower.includes(key)) return curated;
+    }
+    return `${query} luxury vacation rental property`;
   }
 
-  // Fallback: append "luxury vacation rental" for generic queries
-  return `${query} luxury vacation rental property`;
+  // Experiences: travel activity context
+  if (type === "experience") {
+    return `${query} tourist experience activity travel`;
+  }
+
+  // Services: photography vs make-up specific queries
+  if (type === "service") {
+    if (lower.includes("make-up") || lower.includes("makeup") || lower.includes("salon") || lower.includes("bridal")) {
+      return `${query} makeup artist cosmetic beauty salon`;
+    }
+    return `${query} photographer photography photoshoot portrait`;
+  }
+
+  return query;
 }
 
 export async function GET(req: NextRequest) {
   const { searchParams } = new URL(req.url);
   const rawQuery = searchParams.get("q");
   const size = searchParams.get("size") ?? "large";
+  const type = searchParams.get("type"); // "stay" | "experience" | "service" | null
 
   if (!rawQuery) {
     return NextResponse.json({ error: "Query required" }, { status: 400 });
@@ -77,7 +96,7 @@ export async function GET(req: NextRequest) {
     return NextResponse.json({ error: "PEXELS_API_KEY not configured" }, { status: 503 });
   }
 
-  const cacheKey = getCacheKey(rawQuery);
+  const cacheKey = getCacheKey(rawQuery, type);
 
   // ── Check in-memory server cache ──
   const cached = imageCache.get(cacheKey);
@@ -94,7 +113,7 @@ export async function GET(req: NextRequest) {
   }
 
   try {
-    const searchQuery = buildSearchQuery(rawQuery);
+    const searchQuery = buildSearchQuery(rawQuery, type);
     const pexelsRes = await fetch(
       `https://api.pexels.com/v1/search?query=${encodeURIComponent(searchQuery)}&per_page=5&orientation=landscape`,
       {
