@@ -35,8 +35,8 @@ We reimagined Airbnb around the **Doraemon Principle**: *Remove all friction bet
 
 ---
 
-## 📊 Strategy Presentation Slide Deck (`/deck`)
-A 6-slide product strategy deck is built directly into the Next.js app route `/deck`. 
+## 📊 Strategy Presentation Slide Deck (`/presentation`)
+A 6-slide product strategy deck is built directly into the Next.js app route `/presentation`. 
 * **Interactive HTML/CSS Slide Deck:** Styled dynamically to match the premium theme.
 * **One-Click PDF Export:** Features a print controller with custom `@media print` style sheets. By clicking the **Export PDF** button, the slide deck renders into a landscape PDF with pages separated cleanly.
 * **Slides Overview:**
@@ -144,7 +144,7 @@ npm run dev
 ```
 Open **[http://localhost:3000](http://localhost:3000)** in your browser. 
 * To view the Airbnb Odyssey mockup, access the home path `/`.
-* To view and export the Strategy Presentation Deck, navigate to `/deck`.
+* To view and export the Strategy Presentation Deck, navigate to `/presentation`.
 
 ### 5. Build for Production
 ```bash
@@ -159,5 +159,5 @@ pnpm run build
 The application has been verified using a clean compiler pass. 
 
 * **TypeScript Compilation:** Passed with 0 errors.
-* **Next.js Static Generation:** All pages (Explore and Slide Deck `/deck`) pre-rendered successfully.
+* **Next.js Static Generation:** All pages (Explore and Slide Deck `/presentation`) pre-rendered successfully.
 * **API Dynamic Routes:** `/api/geolocation`, `/api/images`, and `/api/plan` resolved as dynamic server routes.

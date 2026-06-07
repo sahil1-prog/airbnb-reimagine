@@ -1207,7 +1207,7 @@ export default function Home() {
                 </div>
 
                 <a
-                  href="/deck"
+                  href="/presentation"
                   style={{ textDecoration: "none", display: "flex", justifyContent: "space-between", alignItems: "center", padding: "14px 16px", background: "var(--bg-card)", border: "1px solid var(--border-subtle)", borderRadius: "var(--radius-md)" }}
                 >
                   <span style={{ fontSize: 13, fontWeight: 600, color: "var(--text-primary)" }}>Strategy Slides (PDF Export)</span>
